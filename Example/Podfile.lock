@@ -1,0 +1,16 @@
+PODS:
+  - SZEasyTipView (0.1.0)
+
+DEPENDENCIES:
+  - SZEasyTipView (from `../`)
+
+EXTERNAL SOURCES:
+  SZEasyTipView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SZEasyTipView: e1db3262a81be0a789528a8ad579d2260102c7da
+
+PODFILE CHECKSUM: 6dba0dc55a6b982041f0419bb363df9945921a78
+
+COCOAPODS: 1.0.0

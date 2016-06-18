@@ -7,12 +7,16 @@
 //
 
 #import "SZAppDelegate.h"
+#import "SZNavigationController.h"
 
 @implementation SZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UITableViewController *tvc = [[SZTableViewController alloc] init];
+    self.window.rootViewController = [[SZNavigationController alloc] initWithRootViewController:tvc];
+    
     return YES;
 }
 

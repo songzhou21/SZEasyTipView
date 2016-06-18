@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		61581E661868CC96968B0ADD /* Pods_SZEasyTipView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF64A3152E18C312A4795DB /* Pods_SZEasyTipView_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E44BB2A11D1579B2003C9E83 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44BB2A01D1579B2003C9E83 /* SZNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		B143B0AF69B6E7B01F4D24EB /* SZEasyTipView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SZEasyTipView.podspec; path = ../SZEasyTipView.podspec; sourceTree = "<group>"; };
 		D3EEFED231A0CA396A27240B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E389105DC30762D732FECBF7 /* Pods-SZEasyTipView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZEasyTipView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZEasyTipView_Example/Pods-SZEasyTipView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E44BB2A01D1579B2003C9E83 /* SZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNavigationController.m; sourceTree = "<group>"; };
+		E44BB2A21D1579B7003C9E83 /* SZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
 		ECF64A3152E18C312A4795DB /* Pods_SZEasyTipView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZEasyTipView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,6 +133,8 @@
 		6003F593195388D20070C39A /* Example for SZEasyTipView */ = {
 			isa = PBXGroup;
 			children = (
+				E44BB2A21D1579B7003C9E83 /* SZNavigationController.h */,
+				E44BB2A01D1579B2003C9E83 /* SZNavigationController.m */,
 				6003F59C195388D20070C39A /* SZAppDelegate.h */,
 				6003F59D195388D20070C39A /* SZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -390,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E44BB2A11D1579B2003C9E83 /* SZNavigationController.m in Sources */,
 				6003F59E195388D20070C39A /* SZAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

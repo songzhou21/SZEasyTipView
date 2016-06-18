@@ -26,4 +26,4 @@ Song Zhou, zhousong1993@gmail.com
 
 ## License
 
-SZEasyTipView is available under the MIT license. See the LICENSE file for more info.
+SZEasyTipView is available under the BSD license. See the LICENSE file for more info.

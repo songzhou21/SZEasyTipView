@@ -187,7 +187,7 @@
     NSAssert(superView == nil || [view hasSuperView:superView], @"The supplied superview %@ is not a direct nor an indirect superview of the supplied reference view %@. The superview passed to this method should be a direct or an indirect superview of the reference view. To display the tooltip within the main window, ignore the superview parameter.", superView, view);
     
     if (!superView) {
-        superView = [UIApplication sharedApplication].windows.firstObject;
+        superView = [UIApplication sharedApplication].windows.lastObject;
     }
     
     CGAffineTransform initialTransform = _config.showInitialTransform;
@@ -206,6 +206,7 @@
     [self addGestureRecognizer:tap];
     
     [superView addSubview:self];
+    [superView bringSubviewToFront:self];
     
     // animation
     void(^animatin)(void) = ^{

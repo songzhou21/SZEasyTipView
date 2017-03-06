@@ -14,8 +14,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
     UITableViewController *tvc = [[SZTableViewController alloc] init];
     self.window.rootViewController = [[SZNavigationController alloc] initWithRootViewController:tvc];
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

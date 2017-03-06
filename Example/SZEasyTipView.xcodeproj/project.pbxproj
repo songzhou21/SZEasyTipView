@@ -22,8 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		61581E661868CC96968B0ADD /* Pods_SZEasyTipView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF64A3152E18C312A4795DB /* Pods_SZEasyTipView_Tests.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E44BB2A11D1579B2003C9E83 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44BB2A01D1579B2003C9E83 /* SZNavigationController.m */; };
+		E44FE90A1E6D0CD2006CEA2A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44FE9091E6D0CD2006CEA2A /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +60,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9531B92791081E1DD82D4C05 /* Pods_SZEasyTipView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZEasyTipView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B143B0AF69B6E7B01F4D24EB /* SZEasyTipView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SZEasyTipView.podspec; path = ../SZEasyTipView.podspec; sourceTree = "<group>"; };
 		D3EEFED231A0CA396A27240B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E389105DC30762D732FECBF7 /* Pods-SZEasyTipView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZEasyTipView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZEasyTipView_Example/Pods-SZEasyTipView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E44BB2A01D1579B2003C9E83 /* SZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNavigationController.m; sourceTree = "<group>"; };
 		E44BB2A21D1579B7003C9E83 /* SZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
+		E44FE9091E6D0CD2006CEA2A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ECF64A3152E18C312A4795DB /* Pods_SZEasyTipView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZEasyTipView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,7 +137,6 @@
 				E44BB2A01D1579B2003C9E83 /* SZNavigationController.m */,
 				6003F59C195388D20070C39A /* SZAppDelegate.h */,
 				6003F59D195388D20070C39A /* SZAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SZViewController.h */,
 				6003F5A6195388D20070C39A /* SZViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -150,6 +149,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E44FE9091E6D0CD2006CEA2A /* Launch Screen.storyboard */,
 				6003F595195388D20070C39A /* SZEasyTipView-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -205,12 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SZEasyTipView_Example" */;
 			buildPhases = (
-				610262C16F81247AFBE6A1A2 /* 📦 Check Pods Manifest.lock */,
+				610262C16F81247AFBE6A1A2 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				8FAE7E6448D46D6D7A7CBAF6 /* 📦 Embed Pods Frameworks */,
-				2EAE81B6AFBE781AE33031FC /* 📦 Copy Pods Resources */,
+				8FAE7E6448D46D6D7A7CBAF6 /* [CP] Embed Pods Frameworks */,
+				2EAE81B6AFBE781AE33031FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,12 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SZEasyTipView_Tests" */;
 			buildPhases = (
-				6A3560504C7ED34A35BE230C /* 📦 Check Pods Manifest.lock */,
+				6A3560504C7ED34A35BE230C /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				FA45A592BE12F4E660F8BEB1 /* 📦 Embed Pods Frameworks */,
-				10B3A515E22A279C8F5904CA /* 📦 Copy Pods Resources */,
+				FA45A592BE12F4E660F8BEB1 /* [CP] Embed Pods Frameworks */,
+				10B3A515E22A279C8F5904CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,8 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				E44FE90A1E6D0CD2006CEA2A /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,14 +298,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10B3A515E22A279C8F5904CA /* 📦 Copy Pods Resources */ = {
+		10B3A515E22A279C8F5904CA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +313,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZEasyTipView_Tests/Pods-SZEasyTipView_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2EAE81B6AFBE781AE33031FC /* 📦 Copy Pods Resources */ = {
+		2EAE81B6AFBE781AE33031FC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +328,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZEasyTipView_Example/Pods-SZEasyTipView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		610262C16F81247AFBE6A1A2 /* 📦 Check Pods Manifest.lock */ = {
+		610262C16F81247AFBE6A1A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,14 +343,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6A3560504C7ED34A35BE230C /* 📦 Check Pods Manifest.lock */ = {
+		6A3560504C7ED34A35BE230C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,14 +358,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8FAE7E6448D46D6D7A7CBAF6 /* 📦 Embed Pods Frameworks */ = {
+		8FAE7E6448D46D6D7A7CBAF6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,14 +373,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZEasyTipView_Example/Pods-SZEasyTipView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA45A592BE12F4E660F8BEB1 /* 📦 Embed Pods Frameworks */ = {
+		FA45A592BE12F4E660F8BEB1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +525,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -541,6 +542,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
